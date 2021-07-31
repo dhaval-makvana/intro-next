@@ -9,19 +9,17 @@ const AllNotes = () => {
     <div>
       <h1>Notes</h1>
 
-      <div>
-      {notes.map(note => (
-        
-        <>
+      {notes.map(note => (  
+        <div key={note.id}>
           <Link key={note.id} href="/notes/[id]" as={`/notes/${note.id}`}>
             <a>
               <strong>{note.title}</strong>
             </a>
           </Link>
           <br/>
-        </>
+        </div>
       ))}
-      </div>
+      
     </div>
   )
 };
