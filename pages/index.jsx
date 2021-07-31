@@ -2,6 +2,9 @@
 import React from "react";
 import Link from "next/link";
 
+// styles
+import "../src/components/styles.module.css";
+
 const Page = () => {
     return (
         <div>
